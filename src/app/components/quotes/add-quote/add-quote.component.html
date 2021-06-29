@@ -1,0 +1,16 @@
+<p>add-quote works!</p>
+<table>
+    <tr>
+        <td>QuoteId:</td>
+        <td><input [(ngModel)]="quote.quoteId" type="text" /></td>
+    </tr>
+    <tr>
+        <td>PremuimType:</td>
+        <td><input [(ngModel)]="quote.premiumType" type="text" /></td>
+    </tr>
+    <tr>
+        <td>Premuim:</td>
+        <td><input [(ngModel)]="quote.premium" type="text" /></td>
+    </tr>
+    <button type="submit" (click)="CreateQuote()"></button>
+</table>

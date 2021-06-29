@@ -1,0 +1,14 @@
+<p>list-quote works!</p>
+<table>
+    <tr>
+        <th>QuoteId</th>
+        <th>Premium Type</th>
+        <th>Premium</th>
+    </tr>
+    <tr *ngFor="let q of quotes">
+        <td>{{q.quoteId}}</td>
+        <td>{{q.premiumType}}</td>
+        <td>{{q.premium}}</td>
+        <td><button class="btn btn-danger" (click)="DeleteQuote(q)"> Delete Employee</button></td>
+    </tr>
+</table>
