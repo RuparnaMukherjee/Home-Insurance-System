@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { UpdateQuoteComponent } from './components/quotes/update-quote/update-quote.component';
 import { AgentDashboardComponent } from './components/agent/agent-dashboard/agent-dashboard.component';
 import { QuotesDashboardComponent } from './components/quotes/quotes-dashboard/quotes-dashboard.component';
+import { AdminDashboardComponent } from './components/admin/admin-dashboard/admin-dashboard.component';
+import { LoginComponent } from './components/login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { QuotesDashboardComponent } from './components/quotes/quotes-dashboard/q
     ViewQuoteByIdComponent,
     UpdateQuoteComponent,
     AgentDashboardComponent,
-    QuotesDashboardComponent
+    QuotesDashboardComponent,
+    AdminDashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

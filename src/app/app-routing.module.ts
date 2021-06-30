@@ -6,9 +6,13 @@ import { ListQuoteComponent } from './components/quotes/list-quote/list-quote.co
 import { QuotesDashboardComponent } from './components/quotes/quotes-dashboard/quotes-dashboard.component';
 import { UpdateQuoteComponent } from './components/quotes/update-quote/update-quote.component';
 import { ViewQuoteByIdComponent } from './components/quotes/view-quote-by-id/view-quote-by-id.component';
+import { LoginComponent } from './components/login/login/login.component';
 
 const routes: Routes = [
-{path:'agent-dashboard',component:AgentDashboardComponent,
+  {path:'login-dashboard',component:LoginComponent,},
+  {path: '', redirectTo: '/login-dashboard', pathMatch: 'full'},
+{ 
+path:'agent-dashboard',component:AgentDashboardComponent,
 children: [
   {
     path: 'quotes-dashboard', // child route path
