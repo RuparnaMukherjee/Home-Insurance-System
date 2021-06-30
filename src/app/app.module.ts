@@ -14,6 +14,8 @@ import { AgentDashboardComponent } from './components/agent/agent-dashboard/agen
 import { QuotesDashboardComponent } from './components/quotes/quotes-dashboard/quotes-dashboard.component';
 import { AdminDashboardComponent } from './components/admin/admin-dashboard/admin-dashboard.component';
 import { LoginComponent } from './components/login/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PolicyholderDashboardComponent } from './components/policyHolder/policyholder-dashboard/policyholder-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { LoginComponent } from './components/login/login/login.component';
     AgentDashboardComponent,
     QuotesDashboardComponent,
     AdminDashboardComponent,
-    LoginComponent
+    LoginComponent,
+    PolicyholderDashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [QuoteServiceService,HttpClient],
   bootstrap: [AppComponent]
