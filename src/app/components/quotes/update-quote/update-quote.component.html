@@ -1,16 +1,43 @@
-<p>update-quote works!</p>
-<table>
-    <tr>
-        <td>QuoteId:</td>
-        <td><input [(ngModel)]="qt.quoteId" type="text" /></td>
-    </tr>
-    <tr>
-        <td>PremuimType:</td>
-        <td><input [(ngModel)]="qt.premiumType" type="text" /></td>
-    </tr>
-    <tr>
-        <td>Premuim:</td>
-        <td><input [(ngModel)]="qt.premium" type="text" /></td>
-    </tr>
-    <button type="submit" (click)="UpdateQuote()"></button>
-</table>
+<div class="container">
+    <div class="col-md-6">
+        <h2 class="text-center">Update Quote</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Quote Id:</label>
+            <input type="name" [(ngModel)]="quote.quoteId" placeholder="Quote Id" name="name" class="form-control" id="name">
+          </div>
+        
+          <div class="form-group">
+            <label for="salary">Premium Type:</label>
+            <input [(ngModel)]="quote.premiumType" placeholder="Premium Type" name="salary" class="form-control" id="salary">
+          </div>
+        
+          <div class="form-group">
+            <label for="id">Premium Amount</label>
+            <input [(ngModel)]="quote.premium" placeholder="Premium Amount" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <div class="form-group">
+            <label for="id">Dwelling Coverage</label>
+            <input [(ngModel)]="quote.dwellingCoverage" placeholder="Dwelling Coverage" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <div class="form-group">
+            <label for="id">Personale Property Coverage</label>
+            <input [(ngModel)]="quote.personalPropertyCoverage" placeholder="Personal Property Coverage" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <div class="form-group">
+            <label for="id">Additional Living Expense</label>
+            <input [(ngModel)]="quote.additionalLivingExpense" placeholder="Additional Living Expense" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <div class="form-group">
+            <label for="id">Medical Expense</label>
+            <input [(ngModel)]="quote.medicalExpense" placeholder="Medical Expense" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <div class="form-group">
+            <label for="id">Deductible Amount</label>
+            <input [(ngModel)]="quote.deductibleAmount" placeholder="Deductible Amount" name="Employee Id" class="form-control" id="employeeid">
+          </div>
+          <button class="btn btn-success" (click)="UpdateQuote()">Submit</button>
+        </form>
+     </div>
+    </div>
+    

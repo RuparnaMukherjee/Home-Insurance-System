@@ -1,7 +1,33 @@
-
+<div class="container">
 <div class="md-form active-cyan active-cyan-2 mb-3">
-    <input class="form-control" type="number" placeholder="Search" aria-label="Search"  [(ngModel)]="id">
-    <button type="submit" (click)="GetQuoteById(id)">Submit</button>
+    <input class="form-control" type="number" placeholder="Search quote by id" aria-label="Search"  [(ngModel)]="id"> 
+    <button class="btn btn-success" type="submit" (click)="GetQuoteById(id)"><span class="glyphicon glyphicon-search"></span>Search</button>
 </div>
-<h5>{{quote.quoteId}}</h5>
-<h5>{{quote.premium}}</h5>
+</div>
+
+<div class="col-lg">
+    <table class="table table-striped" *ngIf="quote">
+    <tr  class="thead-dark">
+        <th>QuoteId</th>
+        <th>Premium Type</th>
+        <th>Premium</th>
+        <th>Dwelling Coverage</th>
+        <th>Detached Structure Coverage</th>
+        <th>Personal Property Coverage</th>
+        <th>Additional Living Expense</th>
+        <th>Medical Expense</th>
+        <th>Deductible Amount</th>
+    </tr>
+    <tr>
+        <td>{{quote.quoteId}}</td>
+        <td>{{quote.premiumType}}</td>
+        <td>{{quote.premium}}</td>
+        <td>{{quote.dwellingCoverage}}</td>
+        <td>{{quote.detachedStructureCoverage}}</td>
+        <td>{{quote.personalPropertyCoverage}}</td>
+        <td>{{quote.additionalLivingExpense}}</td>
+        <td>{{quote.medicalExpense}}</td>
+        <td>{{quote.deductibleAmount}}</td>
+    </tr>
+</table>
+</div>

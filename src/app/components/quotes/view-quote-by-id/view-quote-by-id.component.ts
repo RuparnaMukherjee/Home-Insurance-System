@@ -19,6 +19,11 @@ export class ViewQuoteByIdComponent implements OnInit {
     this.quoteService.GetQuoteById(this.id).subscribe(
       quote=>this.quote=quote
     );
+    if(this.quote===undefined)
+    {
+      alert("Quote not Found")
+      console.log(this.quote)
+    }
   }
 
 }
