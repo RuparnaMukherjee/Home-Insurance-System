@@ -1,0 +1,26 @@
+<div class="container">
+<div class="md-form active-cyan active-cyan-2 mb-3">
+<input class="form-control" type="number" placeholder="Search Policy by id" aria-label="Search"  [(ngModel)]="id"> 
+<button class="btn btn-success" type="submit" (click)="GetPolicyById(id)">
+    <span class="glyphicon glyphicon-search">
+</span>Search</button>
+    </div>
+</div>
+<div class="col-lg">
+    <table class="table table-striped" *ngIf="policy">
+    <tr  class="thead-dark">
+        <th>PolicyID</th>
+        <th>PolicyEffectiveDate</th>
+        <th>PolicyEndDate</th>
+        <th>PolicyTerm</th>
+        <th>PolicyStatus</th>
+    </tr>
+    <tr>
+        <td>{{policy.policyId}}</td>
+        <td>{{policy.policyEffectiveDate}}</td>
+        <td>{{policy.policyEndDate}}</td>
+        <td>{{policy.policyTerm}}</td>
+        <td>{{policy.policyStatus}}</td>
+    </tr>
+</table>
+</div>

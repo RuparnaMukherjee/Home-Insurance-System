@@ -1,0 +1,25 @@
+<h3>Add Policy</h3>
+<table>
+  <tr>
+      <td>PolicyId:</td>
+      <td><input [(ngModel)]="policy.policyId" type="number" /></td>
+  </tr>
+  <tr>
+      <td>Policy Effective Date:</td>
+      <td><input [(ngModel)]="policy.policyEffectiveDate" type="date" /></td>
+  </tr>
+  <tr>
+      <td>Policy End Date:</td>
+      <td><input [(ngModel)]="policy.policyEndDate" type="date" /></td>
+      </tr>
+      <tr>
+        <td>Policy Term:</td>
+        <td><input [(ngModel)]="policy.policyTerm" type="number" /></td>
+        </tr>
+        <tr>
+          <td>Policy Status:</td>
+          <td><input [(ngModel)]="policy.policyStatus" type="text" /></td>
+          </tr>
+  <button type="submit" (click)="CreatePolicy()"></button>
+</table>
+

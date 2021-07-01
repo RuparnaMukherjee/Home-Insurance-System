@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="form-group">
+    <label for="agentId"><strong>Agent Id :</strong></label>
+    <input [(ngModel)]="id" class="form-control col-md-8" /><br>
+    <button class="btn btn-success"  (click)="GetAgentById(id)"> Submit</button>
+    </div>
+  <div class="col-md-10">
+      <h2 class="text-center">View Agent</h2>
+      <form>
+        <div class="form-group">
+          <label for="agentId">Agent Id :</label>
+          <input value="{{agent.agentId}}" name="agentId" class="form-control" id="agentId" disabled readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" value="{{agent.agentName}}" name="name" class="form-control" id="name" disabled readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="designation">Designation:</label>
+          <input value="{{agent.designation}}" name="designation" class="form-control" id="designation" disabled readonly>
+        </div>
+      
+        <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input value="{{agent.salary}}" name="salary" class="form-control" id="salary" disabled readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input value="{{agent.address}}" name="address" class="form-control" id="address" disabled readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Id:</label>
+          <input value="{{agent.email}}" name="email" class="form-control" id="email" disabled readonly>
+        </div>
+
+        <div class="form-group">
+          <label for="mobileNo">Mobile No. :</label>
+          <input value="{{agent.mobileNo}}" name="mobileNo" class="form-control" id="mobileNo" disabled readonly>
+        </div>
+      
+      </form>
+    </div>
+  </div>  

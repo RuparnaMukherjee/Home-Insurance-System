@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Agent List... </h2>
+    <div class=" col-md-6">
+        <table class="block table table-hover">
+            <thead>
+                <tr>
+                    <th>Agent Id</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let agent of list_agent">
+                    <td>{{agent.agentId}}</td>
+                    <td>{{agent.agentName}}</td>
+                    <td>{{agent.designation}}</td>
+                    <td>{{agent.salary}}</td>
+                    <td><button class="btn btn-danger" (click)="RemoveAgent(agent)"> Remove Agent</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

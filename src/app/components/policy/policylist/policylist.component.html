@@ -1,0 +1,27 @@
+<div class="container">
+    <h2>Policy List</h2>
+    <div class= "col-md-6">
+
+   <table class= "block table table-hover">
+       <thead>
+    <tr>
+        <th>PolicyID</th>
+        <th>PolicyEffectiveDate</th>
+        <th>PolicyEndDate</th>
+        <th>PolicyTerm</th>
+        <th>PolicyStatus</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor= "let p of policies">
+        <td>{{p.policyId}}</td>
+        <td>{{p.policyEffectiveDate}}</td>
+        <td>{{p.policyEndDate}}</td>
+        <td>{{p.policyTerm}}</td>
+        <td>{{p.policyStatus}}</td>
+        <td><button class="btn btn-danger" (click)= "DeletePolicy(p)">Delete Policy</button></td>
+    </tr> 
+</tbody>
+</table>
+</div>
+</div>
