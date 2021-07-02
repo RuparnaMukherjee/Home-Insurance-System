@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="col-md-6">
+        <h2 class="text-center">Add Policy Holder</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">PolicyHolder Id:</label>
+            <input type="name" [(ngModel)]="policyHolder.policyHolderId" placeholder="PolicyHolder Id" name="name" class="form-control" id="name">
+          </div>
+        
+          <div class="form-group">
+            <label for="id">Name:</label>
+            <input [(ngModel)]="policyHolder.policyHolderName" placeholder="PolicyHolder Name" name="Customer id" class="form-control" id="customerid">
+          </div>
+          <div>
+              <label for="id">E-mail:</label>
+              <input [(ngModel)]="policyHolder.emailId" placeholder="E-mail Id" name="Customer Id" class="form-control" id="customerid">
+          </div>
+        
+          <div class="form-group">
+            <label for="id">Policy Name:</label>
+            <input [(ngModel)]="policyHolder.policyName" placeholder="Policy Name" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group">
+            <label for="id">Premium Type</label>
+            <input [(ngModel)]="policyHolder.premiumType" placeholder="Premium Type" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group">
+            <label for="id">Credit Card:</label>
+            <input [(ngModel)]="policyHolder.creditCard" placeholder="Credit Card" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group">
+            <label for="id">Occupation:</label>
+            <input [(ngModel)]="policyHolder.occupation" placeholder="Ocuupation" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group">
+            <label for="id">Annual Income:</label>
+            <input [(ngModel)]="policyHolder.annualIncome" placeholder="Annual Income" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group">
+            <label for="id">SSN:</label>
+            <input [(ngModel)]="policyHolder.ssn" placeholder="SSN" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div class="form-group login-group-checkbox">
+            <label for="id">Is Retired?   </label>
+              <input type="checkbox" name="checkbox" value="Yes" [(ngModel)]="policyHolder.isRetired" />
+              <label>Yes</label>
+          </div>
+          <div>
+              <label for="id">AddressLine1:</label>
+              <input [(ngModel)]="address.addressLine1" placeholder="Address Line 1" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div>
+              <label for="id">Address Line 2:</label>
+              <input [(ngModel)]="address.addressLine2" placeholder="Address Line 2" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div>
+              <label for="id">City:</label>
+              <input [(ngModel)]="address.city" placeholder="City" name="Customer Id" class="form-control" id="customerid">
+          </div>
+          <div>
+            <label for="id">State:</label>
+            <input [(ngModel)]="address.state" placeholder="State" name="Customer Id" class="form-control" id="customerid">
+         </div>
+         <div>
+            <label for="id">Zip:</label>
+            <input [(ngModel)]="address.zip" placeholder="Zip" name="Customer Id" class="form-control" id="customerid">
+         </div>
+         <div>
+            <label for="id">Residence Type:</label>
+            <input [(ngModel)]="address.residenceType" placeholder="Residence Type" name="Customer Id" class="form-control" id="customerid">
+         </div>
+         
+
+          <button class="btn btn-success" (click)="CreatePolicyHolder()">Submit</button>
+        </form>
+     </div>
+    </div>

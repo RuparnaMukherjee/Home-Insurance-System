@@ -19,6 +19,10 @@ import { CreatePolicyComponent } from './components/policy/createpolicy/createpo
 import { PolicyListComponent } from './components/policy/policylist/policylist.component';
 import { UpdatePolicyComponent } from './components/policy/updatepolicy/updatepolicy.component';
 import { ViewPolicyByIdComponent } from './components/policy/viewpolicyby-id/viewpolicyby-id.component';
+import { ManagePolicyHolderComponent } from './components/policyHolder/manage-policy-holder/manage-policy-holder.component';
+import { AddPolicyHolderComponent } from './components/policyHolder/add-policy-holder/add-policy-holder.component';
+import { ViewPolicyHolderComponent } from './components/policyHolder/view-policy-holder/view-policy-holder.component';
+import { UpdatePolicyHolderComponent } from './components/policyHolder/update-policy-holder/update-policy-holder.component';
 
 const routes: Routes = [
   {path:'login-dashboard',component:LoginComponent,},
@@ -49,7 +53,26 @@ children:[
   {path:'list-policy',component:PolicyListComponent},
   {path:'update-policy',component:UpdatePolicyComponent},
   {path:'view-policy-by-id',component:ViewPolicyByIdComponent}
-]}]},
+]},
+{
+  path: 'manage-policyHolder', // child route path
+  component: ManagePolicyHolderComponent, // child route component that the router renders
+  children:[
+    {
+      path:'add-policyholder',component:AddPolicyHolderComponent,
+    },
+    {     
+       path:'list-policyholder',component:ViewPolicyHolderComponent,
+    },
+    {
+      path:'update-policyholder',component:UpdatePolicyHolderComponent,
+    },
+    {
+      path:'view-policyholder-by-id',component:ViewPolicyByIdComponent,
+    }
+  ]
+
+}]},
 { 
 path:'agent-dashboard',component:AgentDashboardComponent,
 children: [

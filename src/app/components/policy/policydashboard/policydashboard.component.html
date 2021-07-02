@@ -1,10 +1,19 @@
-<p>policy-dashboard works!</p>
-<nav>
-<a routerLink="add-policy">Add Policy</a><br>
-<a routerLink="list-policy">Policy List</a><br>
-<a routerLink="update-policy">Update Policy</a><br>
-<a routerLink="view-policy-by-id">Add Policy by ID</a><br>
-</nav>
-<router-outlet></router-outlet>
 
-
+<div class="container">
+    <nav>
+    <ul class="nav justify-content-center">
+      <li class="nav-item ">
+        <a class="nav-link"  routerLink="list-policy" routerLinkActive="active">Policy List</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="add-policy">Add Policy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="update-policy">Update Policy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="view-policy-by-id">Search Policy By Id</a>
+    </ul>
+    </nav>   
+  </div>
+  <router-outlet></router-outlet>

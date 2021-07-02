@@ -28,6 +28,13 @@ import { PolicyListComponent } from './components/policy/policylist/policylist.c
 import { PolicyDashboardComponent } from './components/policy/policydashboard/policydashboard.component';
 import { ViewPolicyByIdComponent } from './components/policy/viewpolicyby-id/viewpolicyby-id.component';
 import { PolicyServiceService } from './services/policyservice.service';
+import { AddPolicyHolderComponent } from './components/policyHolder/add-policy-holder/add-policy-holder.component';
+import { UpdatePolicyHolderComponent } from './components/policyHolder/update-policy-holder/update-policy-holder.component';
+import { ViewPolicyHolderComponent } from './components/policyHolder/view-policy-holder/view-policy-holder.component';
+import { DeletePolicyHolderComponent } from './components/policyHolder/delete-policy-holder/delete-policy-holder.component';
+import { ViewByIdPolicyHolderComponent } from './components/policyHolder/view-by-id-policy-holder/view-by-id-policy-holder.component';
+import { PolicyHolderServiceService } from './services/policy-holder-service.service';
+import { ManagePolicyHolderComponent } from './components/policyHolder/manage-policy-holder/manage-policy-holder.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +58,12 @@ import { PolicyServiceService } from './services/policyservice.service';
     PolicyListComponent,
     PolicyDashboardComponent,
     ViewPolicyByIdComponent,
-
+     AddPolicyHolderComponent,
+    UpdatePolicyHolderComponent,
+    ViewPolicyHolderComponent,
+    DeletePolicyHolderComponent,
+    ViewByIdPolicyHolderComponent,
+    ManagePolicyHolderComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,7 +72,7 @@ import { PolicyServiceService } from './services/policyservice.service';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [QuoteServiceService,AgentServiceService,HttpClient,PolicyServiceService],
+  providers: [QuoteServiceService,AgentServiceService,HttpClient,PolicyServiceService,PolicyHolderServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

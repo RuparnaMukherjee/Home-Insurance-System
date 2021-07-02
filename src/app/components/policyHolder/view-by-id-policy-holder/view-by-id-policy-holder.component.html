@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="md-form active-cyan active-cyan-2 mb-3">
+        <input class="form-control" type="number" placeholder="Search policyholder by id" aria-label="Search"  [(ngModel)]="id"> 
+        <button class="btn btn-success" type="submit" (click)="ViewPolicyHolderById(id)"><span class="glyphicon glyphicon-search"></span>Search</button>
+    </div>
+    </div>
+    
+    <div class="col-lg">
+        <table class="table table-striped" *ngIf="ph">
+        <tr  class="thead-dark">
+            <th>Policy Holder Id</th>
+            <th>Name</th>
+            <th>E mail</th>
+            <th>Policy Name</th>
+            <th>Premium Type</th>
+            <th>Credit card</th>
+            <th>Occupation</th>
+            <th>Annual Income</th>
+            <th> Is Retired?</th>
+            <th>Ssn</th>
+            <th>Address 1</th>
+            <th>Address 2</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>Residence Type</th>
+            
+        </tr>
+        <tr>
+            <td>{{ph.policyHolderId}}</td>
+            <td>{{ph.policyHolderName}}</td>
+            <td>{{ph.emailId}}</td>
+            <td>{{ph.policyName}}</td>
+            <td>{{ph.premiumType}}</td>
+            <td>{{ph.creditCard}}</td>
+            <td>{{ph.occupation}}</td>
+            <td>{{ph.annualIncome}}</td>
+            <td>{{ph.isRetired}}</td>
+            <td>{{ph.ssn}}</td>
+            <td>{{ph.address.addressLine1}}</td>
+            <td>{{ph.address.addressLine2}}</td>
+            <td>{{ph.address.city}}</td>
+            <td>{{ph.address.state}}</td>
+            <td>{{ph.address.zip}}</td>
+            <td>{{ph.address.residenceType}}</td>
+            
+        </tr>
+    </table>
+    </div>
