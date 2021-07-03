@@ -11,20 +11,20 @@ export class PolicyHolderServiceService {
   constructor(private  httpService:HttpClient) { }
   public CreatePolicyHolder(policyHolder:PolicyHolder):Observable<PolicyHolder>{
     console.log(policyHolder);
-   return this.httpService.post<PolicyHolder>("http://localhost:8004/policyholder/AddPolicyholder",policyHolder);
+   return this.httpService.post<PolicyHolder>("http://localhost:8081/policyholder/AddPolicyholder",policyHolder);
    }
   public ViewPolicyHolder(){
-    return this.httpService.get<PolicyHolder[]>("http://localhost:8004/policyholder/ViewAllPolicyHolder");
+    return this.httpService.get<PolicyHolder[]>("http://localhost:8081/policyholder/ViewAllPolicyHolder");
    }
   public UpdatePolicyHolder(policyHolder:PolicyHolder){
     console.log(policyHolder);
-    return this.httpService.put<PolicyHolder>("http://localhost:8004/policyholder/UpdatePolicyHolder",policyHolder);
+    return this.httpService.put<PolicyHolder>("http://localhost:8081/policyholder/UpdatePolicyHolder",policyHolder);
    }
   public DeletePolicyHolder(policyHolder:PolicyHolder){
-    return this.httpService.delete<PolicyHolder>("http://localhost:8004/policyholder/DeletePolicyHolder/"+policyHolder.policyHolderId);
+    return this.httpService.delete<PolicyHolder>("http://localhost:8081/policyholder/DeletePolicyHolder/"+policyHolder.policyHolderId);
    }
   public ViewPolicyHolderById(id:number){
-    return this.httpService.get<PolicyHolder>("http://localhost:8004/policyholder/ViewPolicyHolderById/"+id);
+    return this.httpService.get<PolicyHolder>("http://localhost:8081/policyholder/ViewPolicyHolderById/"+id);
   } 
 
 }

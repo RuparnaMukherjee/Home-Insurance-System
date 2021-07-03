@@ -93,6 +93,32 @@ children: [
         path:'view-quote-by-id',component:ViewQuoteByIdComponent,
       }
     ]
+  },
+  {path:'manage-policy',component:PolicyDashboardComponent,
+  children:[
+    {path:'add-policy',component:CreatePolicyComponent},
+    {path:'list-policy',component:PolicyListComponent},
+    {path:'update-policy',component:UpdatePolicyComponent},
+    {path:'view-policy-by-id',component:ViewPolicyByIdComponent}
+  ]},
+  {
+    path: 'manage-policyHolder', // child route path
+    component: ManagePolicyHolderComponent, // child route component that the router renders
+    children:[
+      {
+        path:'add-policyholder',component:AddPolicyHolderComponent,
+      },
+      {     
+         path:'list-policyholder',component:ViewPolicyHolderComponent,
+      },
+      {
+        path:'update-policyholder',component:UpdatePolicyHolderComponent,
+      },
+      {
+        path:'view-policyholder-by-id',component:ViewPolicyByIdComponent,
+      }
+    ]
+  
   }]},
   
   {path:'policyHolder-dashboard',component:PolicyholderDashboardComponent}
