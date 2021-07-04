@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PolicyholderDashboardComponent } from './policyholder-dashboard.component';
+import { PolicyHolderDashBoardComponent } from './policyholder-dashboard.component';
 
-describe('PolicyholderDashboardComponent', () => {
-  let component: PolicyholderDashboardComponent;
-  let fixture: ComponentFixture<PolicyholderDashboardComponent>;
+describe('PolicyHolderDashBoardComponent', () => {
+  let component: PolicyHolderDashBoardComponent;
+  let fixture: ComponentFixture<PolicyHolderDashBoardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PolicyholderDashboardComponent ]
+      declarations: [ PolicyHolderDashBoardComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PolicyholderDashboardComponent);
+    fixture = TestBed.createComponent(PolicyHolderDashBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

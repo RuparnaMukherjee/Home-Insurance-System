@@ -23,6 +23,9 @@ import { ManagePolicyHolderComponent } from './components/policyHolder/manage-po
 import { AddPolicyHolderComponent } from './components/policyHolder/add-policy-holder/add-policy-holder.component';
 import { ViewPolicyHolderComponent } from './components/policyHolder/view-policy-holder/view-policy-holder.component';
 import { UpdatePolicyHolderComponent } from './components/policyHolder/update-policy-holder/update-policy-holder.component';
+import { ViewByIdPolicyHolderComponent } from './components/policyHolder/view-by-id-policy-holder/view-by-id-policy-holder.component';
+import { ViewPoliciesByAgentIdComponent } from './components/agent/view-policies-by-agent-id/view-policies-by-agent-id.component';
+import { ViewPolicyholdersByAgentIdComponent } from './components/agent/view-policyholders-by-agent-id/view-policyholders-by-agent-id.component';
 
 const routes: Routes = [
   {path:'login-dashboard',component:LoginComponent,},
@@ -43,6 +46,12 @@ children:[{
     },
     {
       path:'view-agent-by-id',component:ViewAgentByIdComponent,
+    },
+     {
+      path:'view-policyholders-by-agent-id',component:ViewPolicyholdersByAgentIdComponent,
+    },
+    {
+      path:'view-policies-by-agent-id',component:ViewPoliciesByAgentIdComponent,
     }
   ]
 
@@ -62,13 +71,13 @@ children:[
       path:'add-policyholder',component:AddPolicyHolderComponent,
     },
     {     
-       path:'list-policyholder',component:ViewPolicyHolderComponent,
+       path:'list-policyholder',component:ViewByIdPolicyHolderComponent,
     },
     {
       path:'update-policyholder',component:UpdatePolicyHolderComponent,
     },
     {
-      path:'view-policyholder-by-id',component:ViewPolicyByIdComponent,
+      path:'view-policyholder-by-id',component:ViewByIdPolicyHolderComponent,
     }
   ]
 
@@ -115,13 +124,19 @@ children: [
         path:'update-policyholder',component:UpdatePolicyHolderComponent,
       },
       {
-        path:'view-policyholder-by-id',component:ViewPolicyByIdComponent,
+        path:'view-policyholder-by-id',component:ViewByIdPolicyHolderComponent,
       }
     ]
   
   }]},
   
-  {path:'policyHolder-dashboard',component:PolicyholderDashboardComponent}
+  {path:'policyHolder-dashboard',component:PolicyholderDashboardComponent,
+  children:[
+      {
+        path:'view-policyholder-by-id',component:ViewByIdPolicyHolderComponent,
+      },
+    {path:'list-policy',component:PolicyListComponent},
+  ]}
 ];
 
 @NgModule({

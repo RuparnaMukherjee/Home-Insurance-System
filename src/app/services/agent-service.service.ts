@@ -1,6 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { PolicyHolder } from './policy-holder-service.service';
+import { Policy } from './policyservice.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -27,6 +30,13 @@ export class AgentServiceService {
   ViewAllAgents(){
     return this.httpService.get<Agent[]>("http://localhost:8081/agentManagement/ViewAllAgents");
   }
+  viewPolicyHolder(id:number){
+    return this.httpService.get<PolicyHolder[]>("http://localhost:9091/agent/ViewPolicyHolders/"+id)
+  }
+  viewPolicy(id:number){
+    return this.httpService.get<Policy[]>("http://localhost:9091/agent/ViewPolicies/"+id)
+  }
+
 }
 
 export class Agent{

@@ -35,6 +35,9 @@ import { DeletePolicyHolderComponent } from './components/policyHolder/delete-po
 import { ViewByIdPolicyHolderComponent } from './components/policyHolder/view-by-id-policy-holder/view-by-id-policy-holder.component';
 import { PolicyHolderServiceService } from './services/policy-holder-service.service';
 import { ManagePolicyHolderComponent } from './components/policyHolder/manage-policy-holder/manage-policy-holder.component';
+import { ViewPolicyholdersByAgentIdComponent } from './components/agent/view-policyholders-by-agent-id/view-policyholders-by-agent-id.component';
+import { ViewPoliciesByAgentIdComponent } from './components/agent/view-policies-by-agent-id/view-policies-by-agent-id.component';
+
 
 @NgModule({
   declarations: [
@@ -63,7 +66,10 @@ import { ManagePolicyHolderComponent } from './components/policyHolder/manage-po
     ViewPolicyHolderComponent,
     DeletePolicyHolderComponent,
     ViewByIdPolicyHolderComponent,
-    ManagePolicyHolderComponent,
+    ManagePolicyHolderComponent,  
+       ViewPolicyholdersByAgentIdComponent,
+    ViewPoliciesByAgentIdComponent,
+
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,9 @@ export class PolicyHolderServiceService {
    }
   public ViewPolicyHolderById(id:number){
     return this.httpService.get<PolicyHolder>("http://localhost:8081/policyholder/ViewPolicyHolderById/"+id);
+  }
+  public viewPolicyHolderByEmailId(id:string){
+    return this.httpService.get<PolicyHolder>("http://localhost:8081/policyholderDashboard/ViewPolicyHolderByEmailId/"+id)
   } 
 
 }
