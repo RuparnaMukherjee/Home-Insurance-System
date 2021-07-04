@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="col-md-6">
+      <h2 class="text-center">Update Agent Details</h2>
+      <form>
+            
+      <div class="form-group">
+          <label for="id">Agent Id</label>
+          <input [(ngModel)]="agentupdate.agentId" placeholder="Agent Id" name="Agent Id" class="form-control" id="agentId">
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" [(ngModel)]="agentupdate.agentName" placeholder="Name" name="name" class="form-control" id="name">
+        </div>
+      
+        <div class="form-group">
+          <label for="designation">Designation:</label>
+          <input [(ngModel)]="agentupdate.designation" placeholder="Designation" name="designation" class="form-control" id="designation">
+        </div>
+      
+        <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input [(ngModel)]="agentupdate.salary" placeholder="Salary" name="salary" class="form-control" id="salary">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input [(ngModel)]="agentupdate.address" placeholder="Address" name="address" class="form-control" id="address">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Id:</label>
+          <input [(ngModel)]="agentupdate.email" placeholder="Email" name="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+          <label for="mobileNo">Mobile No. :</label>
+          <input [(ngModel)]="agentupdate.mobileNo" placeholder="Mobile No." name="mobileNo" class="form-control" id="mobileNo">
+        </div>
+    
+      
+        <button class="btn btn-success" type="reset" (click)="UpdateAgent()">Update Details</button>
+      </form>
+  </div>
+</div>

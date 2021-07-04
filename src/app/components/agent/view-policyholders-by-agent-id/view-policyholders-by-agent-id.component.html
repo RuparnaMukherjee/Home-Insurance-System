@@ -1,0 +1,35 @@
+<div>
+    <div class="form-group container">
+    <label for="agentId"><strong>Agent Id :</strong></label>
+    <input [(ngModel)]="id" class="form-control col-md-6" /><br>
+    <button class="btn btn-success"  (click)="viewPolicyHolder(id)"> Submit</button>
+    </div>
+<div class="col-lg table-responsive display-justify-content">
+    <table class="table table-striped">
+    <tr  class="thead-dark">
+        <th>Policy Holder Id</th>
+        <th>Policy Holder Name Type</th>
+        <th>Policy Name</th>
+        <th>Premium Type</th>
+        <th>Credit Card</th>
+        <th>Occupation</th>
+        <th>Annual Income</th>
+        <th>Retired</th>
+        <th>SSN</th>
+        <th>Email Id</th>
+    </tr>
+    <tr *ngFor="let p of list_policyHolders">
+        <td>{{p.policyHolderId}}</td>
+        <td>{{p.policyHolderName}}</td>
+        <td>{{p.policyName}}</td>
+        <td>{{p.premiumType}}</td>
+        <td>{{p.creditCard}}</td>
+        <td>{{p.occupation}}</td>
+        <td>{{p.annualIncome}}</td>
+        <td>{{p.isRetired}}</td>
+        <td>{{p.ssn}}</td>
+        <td>{{p.emailId}}</td>
+    </tr>
+</table>
+</div>
+</div>

@@ -1,6 +1,40 @@
+<!--
 <p>quotes-dashboard works!</p>
 <a routerLink="add-quote">Add quote</a><br>
 <a routerLink="list-quote">List quote</a><br>
 <a routerLink="update-quote">Update quote</a><br>
 <a routerLink="view-quote-by-id">Add quote</a><br>
+
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="add-quote">Add quote</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+-->
+<div class="container">
+  <nav>
+  <ul class="nav justify-content-center">
+    <li class="nav-item ">
+      <a class="nav-link"  routerLink="list-quote" routerLinkActive="active">Quote List</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="add-quote">Add Quote</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="update-quote">Update Quote</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  routerLink="view-quote-by-id">Search Quote By Id</a>
+  </ul>
+  </nav>   
+</div>
 <router-outlet></router-outlet>

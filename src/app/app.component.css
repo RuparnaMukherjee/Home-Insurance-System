@@ -1,0 +1,10 @@
+.navbar-brand{
+    color:#008000;
+}
+.navbar-brand:hover{
+    color:#006400
+}
+.nav-item{
+    font-weight: bold;
+    font-size: large;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="col-md-6">
+      <h2 class="text-center">Add Policy</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Policy Id:</label>
+          <input type="number" [(ngModel)]="policy.policyId" placeholder="Policy Id" name="name" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="Start">Policy Effective Date:</label>
+          <input type="date" [(ngModel)]="policy.policyEffectiveDate" placeholder="Policy Effective Date" name="Start" class="form-control" id="Start">
+        </div>
+
+        <div class="form-group">
+          <label for="End">Policy End Date:</label>
+          <input type="date" [(ngModel)]="policy.policyEndDate" placeholder="Policy End Date" name="End" class="form-control" id="End">
+        </div>
+        <div class="form-group">
+          <label for="term">Policy Term:</label>
+          <input type= "number" [(ngModel)]="policy.policyTerm" placeholder="policyTerm" name="term" class="form-control" id="term">
+        </div>
+        <div class="form-group">
+          <label for="Status">Policy Status:</label>
+          <input type= "text" [(ngModel)]="policy.policyStatus" placeholder="policyStatus" name="Status" class="form-control" id="Status">
+        </div>
+                <button class="btn btn-success" (click)="CreatePolicy()">Submit</button>
+      </form>
+   </div>
+  </div>

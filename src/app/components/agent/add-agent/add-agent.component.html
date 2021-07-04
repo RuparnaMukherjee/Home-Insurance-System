@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="col-md-6">
+      <h2 class="text-center">Add Agent</h2>
+      <form >
+        <div class="form-group">
+          <label for="agentId">Agent Id :</label>
+          <input [(ngModel)]="agent.agentId" placeholder="Agent Id" name="agentId" class="form-control" id="agentId">
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="name" [(ngModel)]="agent.agentName" placeholder="Name" name="name" class="form-control" id="name">
+        </div>
+
+        <div class="form-group">
+          <label for="designation">Designation:</label>
+          <input [(ngModel)]="agent.designation" placeholder="Designation" name="designation" class="form-control" id="designation">
+        </div>
+      
+        <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input [(ngModel)]="agent.salary" placeholder="Salary" name="salary" class="form-control" id="salary">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input [(ngModel)]="agent.address" placeholder="Address" name="address" class="form-control" id="address">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Id:</label>
+          <input [(ngModel)]="agent.email" placeholder="Email Id" name="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+          <label for="mobileNo">Mobile No. :</label>
+          <input [(ngModel)]="agent.mobileNo" placeholder="Mobile No." name="mobileNo" class="form-control" id="mobileNo">
+        </div>
+      
+        <button class="btn btn-success" type="reset" (click)="AddAgent()">Submit</button>
+      </form>
+  </div>
+</div>

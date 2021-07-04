@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="form-group">
+    <label for="agentId"><strong>Agent Id :</strong></label>
+    <input [(ngModel)]="id" class="form-control col-md-6s" /><br>
+    <button class="btn btn-success"  (click)="viewPolicy(id)"> Submit</button>
+    </div>
+<div class="col-lg display-justify-content">
+    <table class="table table-striped">
+    <tr  class="thead-dark">
+        <th>Policy Id</th>
+        <th>Policy Effective Date</th>
+        <th>Policy End Date</th>
+        <th>Policy Term</th>
+        <th>Policy Status</th>
+    </tr>
+    <tr *ngFor="let p of list_policies">
+        <td>{{p.policyId}}</td>
+        <td>{{p.policyEffectiveDate}}</td>
+        <td>{{p.policyEndDate}}</td>
+        <td>{{p.policyTerm}}</td>
+        <td>{{p.policyStatus}}</td>
+    </tr>
+</table>
+</div>
+</div>

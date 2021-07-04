@@ -1,0 +1,17 @@
+<div class="container">
+    <table class="table table-striped">
+    <tr  class="thead-dark">
+        <th>Policy Holder Id</th>
+        <th>Name</th>
+        <th>E mail</th>
+        
+    </tr>
+    <tr *ngFor="let ph of policyHolder">
+        <td>{{ph.policyHolderId}}</td>
+        <td>{{ph.policyHolderName}}</td>
+        <td>{{ph.emailId}}</td>
+        
+        <td><button class="btn btn-danger" style="background-color: black;" (click)="DeletePolicyHolder(ph)"> Delete PolicyHolder</button></td>
+    </tr>
+</table>
+</div>

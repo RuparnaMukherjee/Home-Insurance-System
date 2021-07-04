@@ -9,14 +9,14 @@ import { FormsModule } from '@angular/forms';
 })
 export class UpdateQuoteComponent implements OnInit {
 
-  qt:Quote=new Quote(0,"",0,0,0,0,0,0,0);
+  quote:Quote=new Quote(0,"",0,0,0,0,0,0,0);
   constructor(private quoteService:QuoteServiceService) { }
 
   ngOnInit(): void {
   }
   UpdateQuote():void {
-    console.log(this.qt.quoteId);
-    this.quoteService.UpdateQuote(this.qt).subscribe( date=> {alert("Quote updated Successfully")});
+    console.log(this.quote.quoteId);
+    this.quoteService.UpdateQuote(this.quote).subscribe( date=> {alert("Quote updated Successfully")});
   }
 
 }
